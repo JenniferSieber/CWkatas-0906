@@ -21,9 +21,7 @@ const isolateIt = arr => {
  console.log(isolateIt(["abcd","efgh"]));
  console.log(isolateIt(["abcde","fghij"]));
 
-// KATA 3 7kyu----PICK UP HERE && redo the last 5 prior to these after finishing this
-//---list: https://www.codewars.com/kata/5722b3f0bd5583cf44001000/train/javascript
-// https://www.codewars.com/kata/573023c81add650b84000429
+// KATA 3 7kyu
 const countGrade = scores => {
   let get = (a, b) => scores.filter(score => score >= a && score < b).length;
   return { S:get(100, 101), A:get(90, 100), B:get(80, 90), C:get(60, 80), D:get(0, 60), X:get(-1, 0) };
@@ -52,8 +50,4 @@ const bigToSmall = arr => [].concat(...arr).sort((a,b) => b - a).join('>');
 
 console.log(bigToSmall([[1,2],[3,4],[5,6]]));
 console.log(bigToSmall([[1,3,5],[2,4,6]]));
-
-
-////THE LIST OF TRAINING
-// https://www.codewars.com/kata/5722b3f0bd5583cf44001000/train/javascript
 
